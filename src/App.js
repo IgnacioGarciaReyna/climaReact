@@ -21,6 +21,7 @@ function App() {
     const consultarAPI = async () => {
       if (consultar) {
         const appId = "edd32094f88b8990e35629e37fb28530";
+        //Es importante para hacer el deplyment que sea HTTPS y no HTTP
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&appid=${appId}`;
 
         const respuesta = await fetch(url);
